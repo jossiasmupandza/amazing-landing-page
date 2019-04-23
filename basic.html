@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/popper.js"></script> 
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	
+	<title>basic Bootstrap</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary"> 
+		<div class="container">
+			
+			<a class="navbar-brand h1 mb-0" href="#">Curso</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSite">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Início</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Perfil</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Serviços</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Depoimentos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contactos</a>
+					</li>
+				</ul>
+
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Social</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">Facebook</a>
+							<a class="dropdown-item" href="#">Twiter</a>
+							<a class="dropdown-item" href="#">Instagram</a>
+						</div>
+					</li>
+				</ul>
+
+				<form class="form-inline">
+					<input class="form-control ml-4 mr-2" type="search" placeholder="Buscar...">
+					<button class="btn btn-dark" type="submit">OK</button>
+				</form>
+			</div>
+
+		</div>
+	</nav>
+	
+	<div id="carouselSite" class="carousel slide" data-ride="carousel">
+
+		<ol class="carousel-indicators">
+			<li data-target="#carouselSite" data-target-to="0" class="active"></li>
+			<li data-target="#carouselSite" data-target-to="1" class="active"></li>
+			<li data-target="#carouselSite" data-target-to="2" class="active"></li>
+		</ol>
+		
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="imgs/slide-01.jpg" class="img-fluid d-block">
+				<div class="carousel-caption d-none d-md-block text-dark">
+					<h1>Lorem ipsum dolor</h1>
+					<p class="leed">Mauris dictum, nulla sed placerat sodales, diam augue sollicitudin dui</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="imgs/slide-02.jpg" class="img-fluid d-block">
+				<div class="carousel-caption d-none d-md-block text-dark">
+					<h1>Aliquam in malesuada neque</h1>
+					<p class="leed">Mauris dictum, nulla sed placerat sodales, diam augue sollicitudin dui.</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="imgs/slide-03.jpg" class="img-fluid d-block">
+				<div class="carousel-caption d-none d-md-block text-dark">
+					<h1>Pellentesque ultricies facilisis ultrices</h1>
+					<p class="leed">Mauris dictum, nulla sed placerat sodales, diam augue sollicitudin dui.</p>
+				</div>
+			</div>
+		</div>
+
+		<a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+			<span class="sr-only">Anterior</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+			<span class="carousel-control-next-icon"></span>
+			<span class="sr-only">Avancar</span>
+		</a>
+	</div>
+
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-12 text-center my-5">
+				<h1 class="display-3">
+					<i class="fa fa-cogs text-primary" aria-hidden="true"></i>
+					Lorem ipsum
+				</h1>
+				<p>Praesent erat magna, tristique ac mauris ut, iaculis tincidunt velit.</p>
+			</div>
+		</div>
+		
+		<div class="row mb-5">
+			
+			<div class="col-sm-6 col-md-4 mb-3">
+				<nav id="navbarVertical" class="navbar navbar-light bg-light">
+					<nav class="nav nav-pills flex-column">
+						
+						<a class="nav-link" href="#item1">Tema 1</a>
+						<nav class="nav nav-pills flex-column">
+							<a class="nav-link ml-3" href="#item1-1">Tema 1.1</a>
+							<a class="nav-link ml-3" href="#item1-2">Tema 1.2</a>	
+						</nav>
+						
+						<a class="nav-link my-3" href="#item2">Tema 2</a>
+						
+						<a class="nav-link" href="#item3">Tema 3</a>
+						<nav class="nav nav-pills flex-column">
+							<a class="nav-link ml-3" href="#item3-1">Tema 3.1</a>
+							<a class="nav-link ml-3" href="#item3-2">Tema 3.2</a>	
+						</nav>
+
+					</nav>
+				</nav>	
+			</div>
+			
+			<div class="col-sm-6 col-md-8">
+				
+				<div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="estiloScrollspy">
+					<h4 id="item1">Tema 1</h4>
+					<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla ultricies sagittis. Fusce consectetur placerat neque in molestie. Maecenas ac nisl hendrerit, pellentesque ante nec, aliquam mauris. Nulla consectetur mattis mi non aliquam. Vivamus ut lectus ex. Vestibulum lectus sem, suscipit ut diam vel, accumsan euismod sem.</p>
+
+					<h5 id="item1-1">Tema 1.1</h5>
+					<p class="mb-5">Morbi sollicitudin, leo rhoncus tempus mollis, magna magna auctor metus, sed mattis justo urna ultrices arcu. Pellentesque sed risus hendrerit, iaculis lectus et, sollicitudin nisi. Quisque faucibus facilisis malesuada. Donec maximus lorem vel eleifend bibendum. Sed efficitur, lectus a gravida ullamcorper, sem nibh placerat leo, sed facilisis erat mi vel mauris.</p>
+
+					<h5 id="item1-2">Tema 1.2</h5>
+					<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla ultricies sagittis. Fusce consectetur placerat neque in molestie. Maecenas ac nisl hendrerit, pellentesque ante nec, aliquam mauris. Nulla consectetur mattis mi non aliquam. Vivamus ut lectus ex. Vestibulum lectus sem, suscipit ut diam vel, accumsan euismod sem.</p>
+
+					<h4 id="item2">Tema 2</h4>
+					<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla ultricies sagittis. Fusce consectetur placerat neque in molestie. Maecenas ac nisl hendrerit, pellentesque ante nec, aliquam mauris. Nulla consectetur mattis mi non aliquam. Vivamus ut lectus ex. Vestibulum lectus sem, suscipit ut diam vel, accumsan euismod sem.</p>
+
+					<h4 id="item3">Tema 3</h4>
+					<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla ultricies sagittis. Fusce consectetur placerat neque in molestie. Maecenas ac nisl hendrerit, pellentesque ante nec, aliquam mauris. Nulla consectetur mattis mi non aliquam. Vivamus ut lectus ex. Vestibulum lectus sem, suscipit ut diam vel, accumsan euismod sem.</p>
+
+					<h5 id="item3-1">Tema 3.1</h5>
+					<p class="mb-5">Morbi sollicitudin, leo rhoncus tempus mollis, magna magna auctor metus, sed mattis justo urna ultrices arcu. Pellentesque sed risus hendrerit, iaculis lectus et, sollicitudin nisi. Quisque faucibus facilisis malesuada. Donec maximus lorem vel eleifend bibendum. Sed efficitur, lectus a gravida ullamcorper, sem nibh placerat leo, sed facilisis erat mi vel mauris.</p>
+
+					<h5 id="item3-2">Tema 3.2</h5>
+					<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla ultricies sagittis. Fusce consectetur placerat neque in molestie. Maecenas ac nisl hendrerit, pellentesque ante nec, aliquam mauris. Nulla consectetur mattis mi non aliquam. Vivamus ut lectus ex. Vestibulum lectus sem, suscipit ut diam vel, accumsan euismod sem.</p>	
+				</div>
+
+			</div>
+		</div>
+
+		<div class="row justify-content-sm-center">
+
+			<div class="col-sm-6 col-md-4">
+				<div class="card mb-5">
+					
+					<img class="card-img-top" src="imgs/item-01.jpg">
+					
+					<div class="card-body">
+						<h4 class="card-title">Titulo</h4>
+						<h6 class="card-subtitle mb-2 text-muted">Subtitulo</h6>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					</div>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">Moderno</li>
+						<li class="list-group-item">Rapido</li>
+						<li class="list-group-item">Eficaz</li>
+					</ul>
+					<div class="card-body">
+						<a class="card-link" href="#">link para pagina 1</a>
+						<a class="card-link" href="#">link para pagina 2</a>
+					</div>
+
+					<div class="card-footer text-muted">
+						Rodape
+					</div>
+				</div>	
+			</div>
+
+			<div class="col-sm-6 col-md-4">
+				<div class="card mb-5">
+					<img class="card-img-top" src="imgs/item-02.jpg">
+					<div class="card-body">
+						<h4 class="card-title">Titulo</h4>
+						<h6 class="card-subtitle mb-2 text-muted">Subtitulo</h6>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					</div>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">Moderno</li>
+						<li class="list-group-item">Rapido</li>
+						<li class="list-group-item">Eficaz</li>
+					</ul>
+					<div class="card-body">
+						<a class="card-link" href="#">link para pagina 1</a>
+						<a class="card-link" href="#">link para pagina 2</a>
+					</div>
+
+					<div class="card-footer text-muted">
+						Rodape
+					</div>
+				</div>	
+			</div>
+
+			<div class="col-sm-6 col-md-4">
+				<div class="card mb-5">
+					<img class="card-img-top" src="imgs/item-03.jpg">
+					<div class="card-body">
+						<h4 class="card-title">Titulo</h4>
+						<h6 class="card-subtitle mb-2 text-muted">Subtitulo</h6>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					</div>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">Moderno</li>
+						<li class="list-group-item">Rapido</li>
+						<li class="list-group-item">Eficaz</li>
+					</ul>
+					<div class="card-body">
+						<a class="card-link" href="#" data-toggle="modal" data-target="#siteModal">link para pagina 1</a>
+						<a class="card-link" href="#">link para pagina 2</a>
+					</div>
+
+					<div class="card-footer text-muted">
+						Rodape
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+	<div class="jumbotron jumbotron-fluid ">
+		<div class="container">
+			
+			<div class="row text-center">
+				<div class="col-12">
+					<h1 class="display-4"><i class="fa fa-video text-primary ml-3" aria-hidden="true"  ></i> Texto Ficticio</h1>
+					<p class="lead">placerat neque in molestie. Maecenas ac nisl hendrerit, pellentesque ante nec, aliquam mauris. Nulla consectetur mattis mi non aliquam.</p>
+					<hr>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+					
+					<ul class="nav nav-pills justify-content-center mb-3" id="navpills" role="tablist">
+						<li class="nav-item" >
+							<a class="nav-link active" id="navpills-01" data-toggle="pill" href="#navitem-01">Primeiro</a>
+						</li>
+						<li class="nav-item" >
+							<a class="nav-link" id="navpills-02" data-toggle="pill" href="#navitem-02">Segundo</a>
+						</li>
+						<li class="nav-item" >
+							<a class="nav-link" id="navpills-03" data-toggle="pill" href="#navitem-03">Terceiro</a>
+						</li>					
+					</ul>
+
+					<div class="tab-content" id="nav-pills-content">
+						
+						<div class="tab-pane fade show active" id="navitem-01" role="tabpanel">
+							<div class="row">
+								
+								<div class="col-sm-6">
+									<div class="embed-responsive embed-responsive-16by9">
+										
+										<!-- video do youtube
+										<iframe class="embed-responsive-item" src="link">
+											
+										</iframe>-->
+
+										<video class="embed-responsive-item" controls="controls" poster="imgs/poster-01.png">
+											<source src="video/rihanna-work-ft.drake.mp4" type="video/mp4">
+										</video>
+
+									</div>	
+								</div>
+								
+								<div class="col-sm-6">
+									<p>sollicitudin, leo rhoncus tempus mollis, magna magna auctor metus, sed mattis justo urna ultrices arcu. Pellentesque sed risus hendrerit, iaculis lectus et, sollicitudin nisi. Quisque faucibus facilisis malesuada. Donec maximus lorem vel eleifend bibendum. Sed efficitur, lectus a gravida ullamcorper, sem nibh placerat leo, sed facilisis erat mi vel ma</p>
+								</div>
+								
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="navitem-02" role="tabpanel">
+							<div class="row">
+								
+								<div class="col-sm-6">
+									<div class="embed-responsive embed-responsive-16by9">
+										<video class="embed-responsive-item" controls="controls" poster="imgs/poster-02.png">
+											<source src="video/Maiara & Maraísa - Medo Bobo (Vídeo Clipe) - YouTube (360p).mp4" type="video/mp4">
+										</video>
+									</div>	
+								</div>
+								
+								<div class="col-sm-6">
+									<p>sollicitudin, leo rhoncus tempus mollis, magna magna auctor metus, sed mattis justo urna ultrices arcu. Pellentesque sed risus hendrerit, iaculis lectus et, sollicitudin nisi. Quisque faucibus facilisis malesuada. Donec maximus lorem vel eleifend bibendum. Sed efficitur, lectus a gravida ullamcorper, sem nibh placerat leo, sed facilisis erat mi vel ma</p>
+								</div>
+								
+							</div>
+						</div>
+						
+						<div class="tab-pane fade" id="navitem-03" role="tabpanel">
+							<div class="row">
+								
+								<div class="col-sm-6">
+									<div class="embed-responsive embed-responsive-16by9">
+										<video class="embed-responsive-item" controls="controls" poster="imgs/poster-03.png">
+											<source src="video/I Was Here (United Nations World Humanitarian Day Perform... - YouTube.mp4" type="video/mp4">
+										</video>
+									</div>
+								</div>
+								
+								<div class="col-sm-6">
+									<p>sollicitudin, leo rhoncus tempus mollis, magna magna auctor metus, sed mattis justo urna ultrices arcu. Pellentesque sed risus hendrerit, iaculis lectus et, sollicitudin nisi. Quisque faucibus facilisis malesuada. Donec maximus lorem vel eleifend bibendum. Sed efficitur, lectus a gravida ullamcorper, sem nibh placerat leo, sed facilisis erat mi vel ma</p>
+								</div>
+								
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				
+				
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-center">
+				<h1 class="display-4"><i class="fa fa-paper-plane text-primary" aria-hidden="true"></i> Um Formulario</h1>
+
+				
+			</div>
+			
+		</div>
+		
+	</div>
+
+	<!--Modal-->
+	<div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
+		<!--<div class="modal-dialog modal-sm" role="document">-->
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<h5 class="modal-title">Titulo do modal</h5>
+					<button class="close" type="button" data-dismiss="modal">
+						<span>&times;</span>
+					</button>	
+				</div>	
+
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							
+							<div class="col-6">
+								<h5>Titulo 1</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla ultricies sagittis. Fusce consectetur placerat neque in molestie. Maecenas ac nisl hendrerit, pellentesque ante nec, aliquam mauris. Nulla consectetur mattis mi non aliquam. Vivamus ut lectus ex. Vestibulum lectus sem, suscipit ut diam vel, accumsan euismod sem.</p>
+							</div>
+
+							<div class="col-6">
+								<h5>Titulo 1</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla ultricies sagittis. Fusce consectetur placerat neque in molestie. Maecenas ac nisl hendrerit, pellentesque ante nec, aliquam mauris. Nulla consectetur mattis mi non aliquam. Vivamus ut lectus ex. Vestibulum lectus sem, suscipit ut diam vel, accumsan euismod sem.</p>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<button class="btn btn-danger" type="button" data-dismiss="modal">Fechar</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

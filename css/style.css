@@ -1,0 +1,9 @@
+.bg-primary {
+    background: #007bff linear-gradient(180deg, #268fff, #007bff) repeat-x !important;
+}
+
+.estiloScrollspy {
+	position: relative;
+	overflow: auto;
+	height: 350px;
+}
