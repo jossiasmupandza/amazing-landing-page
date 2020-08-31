@@ -1,8 +1,11 @@
 # amazing-landing-page
-A responsive and multipurpose lading page, focused on conpanies interresed on exposing thear ideals and services online.
+A responsive and multipurpose lading page, focused on conpanies interresed on exposing thear ideals and services online. it may be used as a bootstrap 4 template.
 
-## Demo
 ![amazin-landing-page](https://user-images.githubusercontent.com/38070519/91673401-3f3cd700-eb34-11ea-9064-336b943aa01e.gif)
+
+## Getting started
+1. Clone the repository
+2. open the file basic.html (with a text editor of your choice) and start coding!!! :)
 
 ## Technologies 
 used techs: html 5, css 3, Bootstrap 4.
