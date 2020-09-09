@@ -28,7 +28,7 @@ this project is a bootstrap 4 template, for lading pages.
 2. open the file basic.html (with a text editor of your choice) and start coding!!! :)
 
 ## Demo
-Follow [link]() for a live demo.
+Follow the link for a live demo: [alpagejm.netlify.app](https://alpagejm.netlify.app/).
 
 ## Features
 List of features t
